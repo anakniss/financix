@@ -19,13 +19,17 @@
 ## **Configuração do Backend**
 
 1. **Clone o repositório:**
-2. **Instale as dependências do projeto:**
+ ```bash
+    git clone <url-do-repositorio>
+    cd backend
+ ```
+3. **Instale as dependências do projeto:**
     
     ```bash
     dotnet restore
     ```
     
-3. **Configure o banco de dados:**
+4. **Configure o banco de dados:**
     - Localize o arquivo `appsettings.json` na pasta `backend/` e atualize a seção `ConnectionStrings` com a string de conexão do banco de dados escolhido. Exemplo para SQL Server:
         
         ```json
@@ -38,7 +42,7 @@
         
         ```
         
-4. **Aplicar as Migrations:**
+5. **Aplicar as Migrations:**
 Certifique-se de que o banco de dados especificado na string de conexão existe.
     - Gere ou aplique as migrations:
         
@@ -48,7 +52,7 @@ Certifique-se de que o banco de dados especificado na string de conexão existe.
         
         ```
         
-5. **Executar o servidor:**
+6. **Executar o servidor:**
     - Rode a aplicação:
         
         ```bash
