@@ -60,6 +60,7 @@ public class UserController : ControllerBase
         dbUser.Email = user.Email;
         dbUser.Password = user.Password;
         dbUser.Role = user.Role;
+        dbUser.UpdatedAt = DateTime.Now;
 
         await _context.SaveChangesAsync();
     
