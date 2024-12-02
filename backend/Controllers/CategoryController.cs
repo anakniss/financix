@@ -66,7 +66,7 @@ public class CategoryController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> CreateCategory(Category category)
     {
-        var userExists = await _context.Categories.AnyAsync(u => u.Id == category.UserId);
+        var userExists = await _context.Users.AnyAsync(u => u.Id == category.UserId);
         if (!userExists)
             return BadRequest("Invalid UserId.");
         
