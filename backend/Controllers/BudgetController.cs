@@ -91,9 +91,9 @@ public class BudgetController : ControllerBase
     }
     
     [HttpPut("{id}")]
-    public async Task<IActionResult> UpdateBudget(int id, [FromBody] Budget budgetResult)
+    public async Task<IActionResult> UpdateBudget(int id, [FromBody] Budget budget)
     {
-        if (id != budgetResult.Id)
+        if (id != budget.Id)
         {
             return BadRequest("Budget ID mismatch.");
         }
@@ -104,25 +104,25 @@ public class BudgetController : ControllerBase
             return NotFound("Budget not found.");
         }
         
-        var categoryExists = await _context.Categories.AnyAsync(e => e.Id == budgetResult.CategoryId);
+        var categoryExists = await _context.Categories.AnyAsync(e => e.Id == budget.CategoryId);
         if (!categoryExists)
         {
             return BadRequest("Category with the provided CategoryId does not exist.");
         }
         
-        var userExists = await _context.Users.AnyAsync(u => u.Id == budgetResult.UserId);
+        var userExists = await _context.Users.AnyAsync(u => u.Id == budget.UserId);
         if (!userExists)
         {
             return BadRequest("User with the provided UserId does not exist.");
         }
         
-        existingBudget.Amount = budgetResult.Amount;
-        existingBudget.Period = budgetResult.Period;
-        existingBudget.CategoryId = budgetResult.CategoryId;
+        existingBudget.Amount = budget.Amount;
+        existingBudget.Period = budget.Period;
+        existingBudget.CategoryId = budget.CategoryId;
         existingBudget.UpdatedAt = DateTime.Now;
-        existingBudget.StartDate = budgetResult.StartDate;
-        existingBudget.EndDate = budgetResult.EndDate;
-        existingBudget.UserId = budgetResult.UserId;
+        existingBudget.StartDate = budget.StartDate;
+        existingBudget.EndDate = budget.EndDate;
+        existingBudget.UserId = budget.UserId;
 
         await _context.SaveChangesAsync();
 
@@ -190,5 +190,4 @@ public class BudgetController : ControllerBase
             .CountAsync();
         return Ok(budgetCount);
     }
-
 }

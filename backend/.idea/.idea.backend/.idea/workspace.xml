@@ -9,9 +9,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc3dd11f-77da-4416-952e-f28aad2ec857" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Controllers/BudgetController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controllers/GoalController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.backend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities/Budget.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Entities/Budget.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/BudgetController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/BudgetController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/CategoryController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/CategoryController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/backend.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/backend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net9.0/backend.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/backend.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net9.0/backend.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/backend.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net9.0/backend.pdb" afterDir="false" />
@@ -116,7 +118,7 @@
       <workItem from="1733093928139" duration="4188000" />
       <workItem from="1733107352692" duration="5113000" />
       <workItem from="1733173569760" duration="81000" />
-      <workItem from="1733178505056" duration="3154000" />
+      <workItem from="1733178505056" duration="5733000" />
     </task>
     <servers />
   </component>
