@@ -35,9 +35,6 @@
     <Compile Remove="Migrations\20241201230005_Initial.Designer.cs" />
     <Compile Remove="Migrations\20241201230159_Initial.cs" />
     <Compile Remove="Migrations\20241201230159_Initial.Designer.cs" />
-    <Compile Update="Controllers\GoalController.cs">
-      <DependentUpon>CategoryController.cs</DependentUpon>
-    </Compile>
   </ItemGroup>
 
   <ItemGroup>
