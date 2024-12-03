@@ -9,8 +9,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc3dd11f-77da-4416-952e-f28aad2ec857" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Controllers/TransactionController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.backend/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controllers/GoalController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/BudgetController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/BudgetController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -104,7 +103,7 @@
       <workItem from="1733093928139" duration="4188000" />
       <workItem from="1733107352692" duration="5113000" />
       <workItem from="1733173569760" duration="81000" />
-      <workItem from="1733178505056" duration="4420000" />
+      <workItem from="1733178505056" duration="5379000" />
     </task>
     <servers />
   </component>

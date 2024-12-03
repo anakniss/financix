@@ -145,4 +145,17 @@ public class CategoryController : ControllerBase
 
         return Ok(categories);
     }
+    
+    [HttpGet("GetCategoryCountByUserId/{userId}")]
+    public async Task<ActionResult<int>> GetCategoryCountByUserId(int userId)
+    {
+        var userExists = await _context.Users.AnyAsync(u => u.Id == userId);
+        if (!userExists)
+            return BadRequest("Invalid UserId.");
+
+        var categoryCount = await _context.Categories
+            .Where(e => e.UserId == userId)
+            .CountAsync();
+        return Ok(categoryCount);
+    }
 }

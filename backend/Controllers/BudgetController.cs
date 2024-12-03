@@ -190,5 +190,4 @@ public class BudgetController : ControllerBase
             .CountAsync();
         return Ok(budgetCount);
     }
-
 }
